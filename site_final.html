@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html>
+<title>FEMOYER</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- style css -->
+<link rel="stylesheet" href="css/style.css">
+<!-- Responsive-->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- fevicon -->
+<link rel="icon" href="images/fevicon.png" type="image/gif" />
+<!-- Scrollbar Custom CSS -->
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+video {
+  width: 100%;
+  height: auto;
+}
+
+
+/* Full height image header */
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+}
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+.bgimg-1 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-size: 50%;
+  background-image: url("images/logo/Team Femoyer.jpg");
+  min-height: 100%;
+}
+
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="https://www.sserd.org/internship/#" class="w3-hover-opacity w3-bar-item"><img src="images/sserd_logo.png" style="width: 100px;height:60px"></a>
+    
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#home" class="w3-bar-item w3-button w3-wide">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button">MOTIVATION</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="#gallery" class="w3-bar-item w3-button"><i class="fa fa-th"></i> GALLERY</a>
+      <a href="#work" class="w3-bar-item w3-button"><img src="images/sat.png" style="width:35px;height:26px"></i> WORK</a>
+      <a href="https://www.sserd.org/internship/#" class="w3-bar-item w3-button"><img src="images/sat.png" style="width:35px;height:26px"></i> SSERD Internship</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+<a href="#home" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">MOTIVATION</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+    <a href="#gallery" onclick="w3_close()" class="w3-bar-item w3-button">GALLERY</a>
+
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+    <a href="https://www.sserd.org/internship/#" onclick="w3_close()" class="w3-bar-item w3-button">SSERD Internship</a>
+
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h2 class="w3-center"><b>MOTIVATION</b></h2>
+  
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-lightbulb-o w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Ideation</p>
+      <p>The recent trend in satellite technology is the deployment of a constellation of 
+      satellites that are smaller in size and weigh less than conventional single-body
+      satellites.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Passion</p>
+      <p>We made sure that every part of the mission was covered thoroughly. This ensured that
+the femto satellite would work in theory, a required outcome for this internship.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Design</p>
+      <p>Femto-satellites are of different sizes (nano, micro, cube) and their
+functionality is highly dependent on the topology and remote sensing technology
+embedded in them.</p>
+    </div>
+    <div class="w3-quarter">
+            <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+
+      <p class="w3-large">Support</p>
+      <p>Our mentors- Mr. Akshay Choudhari, Mr.
+Vishnuvardhan Shaktibala and Ms. Rashika SN played a huge part in motivating
+the team towards the correct path.
+</p>
+    </div>
+  </div>
+</div>
+
+<!-- Team Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="team">
+  <h2 class="w3-center"><b>THE TEAM</b></h2>
+  
+  <div class="w3-row-padding" style="margin-top:64px">
+  
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card w3-white">
+        <img src="images/MEGHANA VIDYADHAR.jpg" alt="Meghana" style="width:100%; height:175px">
+        <div class="w3-container">
+          <h3>Meghana Vidyadhar</h3>
+          <p class="w3-opacity">Team Lead 1</p>
+          <p>"The only time you should look into the past is when you look up to the sky."</p>
+          <p>
+      <form action="https://www.linkedin.com/in/meghanavidyadhar/">
+        <input type="submit" value="View Linkedin Profile" class="w3-button w3-light-grey w3-block">
+      </form>
+      </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card w3-white">
+    <img src="images/AFREEN ABDUL KHALEEL.jpg" alt="Afreen" style="width:100%; height:175px">
+        <div class="w3-container">
+          <h3>Afreen Abdul Khaleel</h3>
+          <p class="w3-opacity">Asst. Team Lead 1</p>
+          <p>"Exploration and curiosity are crucial elements towards scientific innovation."</p>
+          <p>
+      <form action="https://www.linkedin.com/in/afreenabdulkhaleel">
+        <input type="submit" value="View Linkedin Profile" class="w3-button w3-light-grey w3-block">
+      </form>
+      </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card w3-white">
+        <img src="images/JHANVI SWAROOP RAO.jpg" alt="Jhanvi" style="width:100%; height:175px">
+        <div class="w3-container">
+          <h3>Jhanvi Rao</h3>
+          <p class="w3-opacity">Team Lead 2</p>
+          <p>"Follow the ways of Captain Jack Sparrow and you'll know what to do."</p>
+          <p>
+      <form action="https://www.linkedin.com/in/jhanvi-swaroop-rao-66a0291ba">
+        <input type="submit" value="View Linkedin Profile" class="w3-button w3-light-grey w3-block">
+      </form>
+      </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card w3-white">
+        <img src="images/SAURABH GORE.jpg" alt="Saurabh" style="width:100%; height:175px">
+        <div class="w3-container">
+          <h3>Saurabh Gore</h3>
+          <p class="w3-opacity">Asst. Team Lead 2</p>
+          <p>"There's a lot of hope,Don't sit on a couch someplace."</p>
+          <p>
+      <form action="http://linkedin.com/in/saurabh-gore-bb968a18b">
+        <input type="submit" value="View Linkedin Profile" class="w3-button w3-light-grey w3-block">
+      </form>
+      </p>
+        </div>
+      </div>
+    </div>
+  
+  <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card w3-white">
+        <img src="images/AKSHAYANIVASINI R S.jpg" alt="Akshayanivasini" style="width:100%; height:175px">
+        <div class="w3-container">
+          <h3>Akshayanivasini R S</h3>
+          <p class="w3-opacity">Head of Communications</p>
+          <p>"It isn’t what it is, it’s what it is going to be."</p>
+         
+          <p>
+      <form action="https://www.linkedin.com/in/akshayanivasini-saravanaraj-8682701b7">
+        <input type="submit" value="View Linkedin Profile" class="w3-button w3-light-grey w3-block">
+      </form>
+      </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card w3-white">
+    <img src="images/DIVYA.jpg" alt="Divya" style="width:100%; height:175px; "  >
+        <div class="w3-container">
+          <h3>Divya Seshadri</h3>
+          <p class="w3-opacity">Head of Electrical</p>
+          <p>"Life’s all about perception."</p>
+                    <p>
+      <form action="https://www.linkedin.com/in/divya-seshadri-m/">
+        <input type="submit" value="View Linkedin Profile" class="w3-button w3-light-grey w3-block">
+      </form>
+      </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card w3-white">
+        <img src="images/DHARINI.jpg" alt="Dharini" style="width:100%; height:175px" class="w3-right">
+        <div class="w3-container">
+          <h3>Dharini</h3>
+          <p class="w3-opacity">Head of Payload</p>
+          <p>A math lover and a techonology geek</p>
+
+          <p>
+      <form action="https://www.linkedin.com/in/dharini242001/">
+        <input type="submit" value="View Linkedin Profile" class="w3-button w3-light-grey w3-block">
+      </form>
+      </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card w3-white">
+        <img src="images/MANUEL NTUMBA.jpg" alt="Manuel" style="width:100%; height:175px">
+        <div class="w3-container">
+          <h3>Manuel Ntumba</h3>
+          <p class="w3-opacity">Head of Astrodynamics</p>
+          <p>Co-founder & CTO of Tod'Aérs</p>
+         
+          <p>
+      <form action="https://www.linkedin.com/in/manuel-ntumba-b4a1781b5">
+        <input type="submit" value="View Linkedin Profile" class="w3-button w3-light-grey w3-block">
+      </form>
+      </p>
+        </div>
+      </div>
+    </div>
+  
+  <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card w3-white">
+        <img src="images/HARSH SHROFF.jpg" alt="Harsh" style="width:100%; height:175px">
+        <div class="w3-container">
+          <h3>Harsh Shroff</h3>
+          <p class="w3-opacity">Head of Report</p>
+          <p>"Somewhere something incredible is waiting to be known."</p>
+          <p>
+      <form action="https://www.linkedin.com/in/harsh-shroff-3560391ba">
+        <input type="submit" value="View Linkedin Profile" class="w3-button w3-light-grey w3-block">
+      </form>
+      </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card w3-white">
+    <img src="images/TANMAY PATEL.jpg" alt="Tanmay" style="width:100%; height:175px">
+        <div class="w3-container">
+          <h3>Tanmay Patel</h3>
+          <p class="w3-opacity">Deployer Design and Integration</p>
+          <p>"Every new day is another chance to change your life."</p>
+          <p>
+      <form action="https://www.linkedin.com/in/tanmay-patel-526614171">
+        <input type="submit" value="View Linkedin Profile" class="w3-button w3-light-grey w3-block">
+      </form>
+      </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card w3-white">
+        <img src="images/SOHAIL NADAF.jpg" alt="Sohail" style="width:100%; height:175px">
+        <div class="w3-container">
+          <h3>Sohail Nadaf</h3>
+          <p class="w3-opacity">Report</p>
+          <p>"Learn to take advice seriously, even if it is against your believes and desires."</p>
+          <p>
+      <form action="http://www.linkedin.com/in/Sohail-Nadaf">
+        <input type="submit" value="View Linkedin Profile" class="w3-button w3-light-grey w3-block">
+      </form>
+      </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card w3-white">
+        <img src="images/ANANYA AGGARWAL.jpg" alt="Ananya" style="width:100%; height:175px">
+        <div class="w3-container">
+          <h3>Ananya Aggarwal</h3>
+          <p class="w3-opacity">Member of Electrical Team</p>
+          <p>Enthusiastic person, fascinated about space science.</p>
+          <p>
+      <form action="https://www.linkedin.com/in/ananya-aggarwal-034647146">
+        <input type="submit" value="View Linkedin Profile" class="w3-button w3-light-grey w3-block">
+      </form>
+      </p>
+        </div>
+      </div>
+    </div>
+  
+  <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card w3-white">
+        <img src="images/EUNICE KURAGANTI.jpg" alt="Eunice" style="width:100%; height:175px">
+        <div class="w3-container">
+          <h3>Eunice Kuraganti</h3>
+          <p class="w3-opacity">Member of communication</p>
+          <p>"When I start exploring the space, I came to know that God is infinite."</p>
+          <p>
+      <form action="https://www.linkedin.com/in/eunice-kuraganti-050998196">
+        <input type="submit" value="View Linkedin Profile" class="w3-button w3-light-grey w3-block">
+      </form>
+      </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card w3-white">
+    <img src="images/GAYATHRI NARAYANA.jpg" alt="Gayathri" style="width:100%; height:175px" align="center">
+        <div class="w3-container">
+          <h3>Gayathri Narayana</h3>
+          <p class="w3-opacity">Member of communication</p>
+          <p>Very Very Very Very Very Very Busy</p>
+         
+          <p>
+      <form action="https://www.linkedin.com/in/gayathri-narayana-y">
+        <input type="submit" value="View Linkedin Profile" class="w3-button w3-light-grey w3-block">
+      </form>
+      </p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card w3-white">
+        <img src="images/CHIRAG CHORADIA.jpg" alt="Chirag" style="width:100%; height:175px">
+        <div class="w3-container">
+          <h3>Chirag Choradia</h3>
+          <p class="w3-opacity">Member of the team</p>
+          <p>ERROR 404</p>
+          
+          <p>
+      <form action="https://www.linkedin.com/in/chirag-c-choradia">
+        <input type="submit" value="View Linkedin Profile" class="w3-button w3-light-grey w3-block">
+      </form>
+      </p>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+</div>
+
+
+
+<!-- Work Section -->
+<div class="w3-container" style="padding:100px 16px" id="gallery">
+  <h2 class="w3-center"><b>GALLERY</b></h2>
+  <p class="w3-center w3-large">A Glance at Fun Sessions</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="images/funs/catmeme.jpg" style="width:100%; height:200px" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="images/funs/Slide1.jpg" style="width:100%; height:200px" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="images/funs/Slide2.jpg" style="width:100%; height:200px" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="images/funs/Slide3.jpg" style="width:100%; height:200px" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+  <div class="w3-col l3 m6">
+      <img src="images/funs/Slide4.jpg" style="width:100%; height:200px" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+  <div class="w3-col l3 m6">
+      <img src="images/funs/Slide5.jpg" style="width:100%; height:200px" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+  <div class="w3-col l3 m6">
+      <img src="images/funs/Slide6.jpg" style="width:100%; height:200px" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+  <div class="w3-col l3 m6">
+      <img src="images/funs/reportmeme.jpg" style="width:100%; height:200px" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+  </div>
+</div>
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-dark-grey" style="padding:3px 2px 0px" >
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">15</span>
+    <br>Teammates
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">5</span>
+    <br>Weeks
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">3</span>
+    <br>Mentors
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">1</span>
+    <br>MISSION
+  </div>
+</div>
+
+<div class="w3-container w3-dark-grey w3-center w3-xxlarge" style="padding:0px 6px 20px; font-family: 'Audiowide';font-size: 22px"> 
+    <br>TEAM FEMOYER : MISSION TABSAT</div>
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container w3-light-grey" style="padding:70px 16px" id="work">
+  <h2 class="w3-center"><b>TABSAT: THEORETICAL DESIGN APPROACH OF DISTRIBUTED FEMTOSATELLITE SYSTEM <br>FOR FOREST FIRE MONITORING</b></h2>
+  <div class="w3-row-padding" style="padding: 30px">
+    <div class="w3-col m6">
+      <h3>Our Mission design.</h3>
+      
+      <ol>
+      <li>
+        <b><i>Femto satellites (TabSat):</i></b>
+        <ol type="a">
+        <li>Primary objective: Survive- should be able to send telemetry to the hub,
+        confirm it’s position in the configuration.</li>
+        <li>Secondary Objective-: Imaging- Click images of forest fires in Amazon Rain
+        Forest- this depends on the power, link and memory budget.</li>
+        <li> Tertiary Objective: Sending Images- Sending the captured images to the
+        hub.</li>
+        </li>
+      </ol>
+        <li>
+        <b><i>The HUB / DEPLOYER: </i></b>
+        <ol type="a">
+        <li>Primary Objective: Deploy- Deploy the femto satellites in their respective
+        orbit/configuration.</li>
+        <li> Secondary Objective: Communication- Communicate with the femto satel-
+        lites</li>
+        <li> Tertiary Objective: Ground- Communicate with the ground</li>
+      </ol>
+        </li>
+      </ol>
+      <p><a href="https://www.sserd.org/2020/11/13/mission-tabsat-a-femtosatellite-mission-sserd-online-space-research-internship/" class="w3-button w3-black"><i class="fa fa-th"> </i> Visit our Blog</a></p>
+    </div>
+    <div class="w3-col m6 w3-center">
+      <video width="520" height="440" controls autoplay muted loop>
+  <source src="video/mission.mp4" type="video/mp4">
+  </video>
+    </div>
+  </div>
+</div>
+
+<!-- Work Section -->
+<div class="w3-container" style="padding:100px 16px" >
+  <h2 class="w3-center"><b>OUR WORK</b></h2>
+  <p class=" w3-large" style="text-align: justify;
+  text-justify: inter-word;">The aim of our research work is to provide a theoretical design of a cluster of distributed femto satellites along with the deployer (hub design) for monitoring forest fire using Remote Sensing .The increasing
+    incidences of unanticipated forest fires are a growing cause of imbalances in various
+    aspects of the biosphere. 
+    The use of satellites to detect forest fires at the earliest possible time helps avoid unwanted negative effects of such disasters. Due to their small size and cost, femtosatellites in particular have great potential in preventing disasters. The TabSat equipped with
+    imaging payload and ADCS is effective in monitoring and imaging applications. The femto satellite hub and the
+    deployer are both contained in a 6U CubeSat structure along with a proposed propulsion system. The use of an imaging payload and ADCS on the PCB of the femtosatellite
+    highlights the significance of the TabSat, simultaneously pointing towards the implementation of more efficient trade-offs between parameters such as cost and weight, for
+    the upcoming mission advancements.</p>
+
+    <div class="w3-container">
+      <div class="w3-col m6 w3-center">
+        <div class="w3-container">
+        <video width="400" height="400" controls autoplay loop muted>
+        <source src="video/femtosat.mp4" type="video/mp4">
+        </video>
+      </div>
+      </div>
+
+      <div class="w3-col m6 w3-center">
+        <div class="w3-container">
+        <img src="images/astrodynamics.gif" style="width:400px;height:300px;">
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="w3-center w3-padding-64">
+  <h3 class="w3-center"><b>SUBSYSTEMS</b></h3>
+
+    </div>
+  <div class="w3-row-padding" id="work2">
+    
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="images/astro.jpg" alt="Astrodynamics" style="width:100%">
+        <div class="w3-container">
+          <h3>Astrodynamics</h3>
+          
+          <ul>
+            <li>Orbit Selection</li>
+            
+            <li>Orbit transfer maneuver</li>
+            <li> Propulsion system </li>
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+          
+          
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="images/payload.jpg" alt="Payload Subsystem" style="width:100%">
+        <div class="w3-container">
+          <h3>Payload Subsystem</h3>
+          <ul>
+            <li>Payload (Imaging sensor) selection</li>
+            <li>Thermal control</li>
+            <li> Aesthetics </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="images/elec.jpg" alt="Electrical Subsystem" style="width:100%">
+        <div class="w3-container">
+          <h3>Electrical Subsystem</h3>
+          
+            
+            <ul >
+            <li>Power budget</li>
+            <li>Position Determination</li>
+            <li>Attitude determination and Control</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-row-padding">
+    
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="images/comm.jpg" alt="Communication Subsystem" style="width:100%">
+        <div class="w3-container">
+          <h3>Communication Subsystem</h3>
+           <ul >
+            <li>Link Budget</li>
+            <li>Relay model</li>
+            <li>Antenna selection</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="images/struct.jpg" alt="Structural Subsystem" style="width:100%">
+        <div class="w3-container">
+          <h3> Structural Subsystem</h3>
+          <ul >
+            <li>CAD model</li>
+            <li>Mass budget</li>
+            <li>Volume budget</li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="images/deployer.jpg" alt="Deployer" style="width:100%">
+        <div class="w3-container">
+          <h3>Deployer</h3>
+           <ul >
+            <li>Design considerations</li>
+            <li>Deployment mechanism</li>
+            <li>Interference analysis</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+<!-- Modal for full size images on click
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>-->
+</div>
+<!-- Report -->
+<div class="w3-container w3-light-grey w3-padding-64" id="work2">
+  <div class="w3-row-padding">
+    <div class="w3-col m6 w3-center">
+      <h3>Know more about our work!</h3>
+      
+    </div>
+    <div class="w3-col m6">
+    
+    <div style="text-align:center" class="w3-hover-opacity">
+      <h2> <a href="download1.html"> Click here to download our full report </a> </h2>
+  </div>
+    
+      
+    </div>
+  </div>
+</div>
+
+<!-- Pricing Section -->
+
+
+<!-- Contact Section -->
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64" id="contact">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <div class="w3-col m6">
+          <p style="font-size: 15px"> For more Internship opportunities (Batch-5 and Batch-6 applications open) :</p>
+
+      <a href="https://www.sserd.org/internship/#"><img class=" w3-hover-opacity" src="https://static.wixstatic.com/media/f3a806_ad806857793b459ea2c8bf87cc335454~mv2.png/v1/fill/w_440,h_248,al_c,q_85,usm_0.66_1.00_0.01/logo-white.webp" width="310" height="160"></a>
+    </div>
+    <div class="w3-col m6">
+    <p> Follow SSERD here</p>
+    <a href="https://www.facebook.com/sserd.org/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/sserd_org/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/sserd_org"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/company/sserd"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <a href="https://youtube.com/sserd?sub_confirmation=1"><img class=" w3-hover-opacity" src="images/youtube.png" style="width:5%" ></a>
+  </div>
+  </div>
+  <p>Designed by <a href="" title="Team Femoyer" target="_blank" class="w3-hover-text-green">TEAM FEMOYER</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+
+</script>
+
+</body>
+</html>
